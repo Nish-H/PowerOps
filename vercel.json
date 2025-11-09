@@ -5,7 +5,21 @@
   "installCommand": "cd frontend && npm install",
   "framework": "vite",
   "regions": ["iad1"],
+  "functions": {
+    "api/**/*.py": {
+      "runtime": "python3.9"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "/api/:path*"
+    }
+  ],
   "env": {
-    "VITE_API_URL": ""
+    "BACK4APP_APPLICATION_ID": "@back4app_application_id",
+    "BACK4APP_REST_API_KEY": "@back4app_rest_api_key",
+    "BACK4APP_JAVASCRIPT_KEY": "@back4app_javascript_key",
+    "BACK4APP_SERVER_URL": "https://parseapi.back4app.com"
   }
 }
