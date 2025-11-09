@@ -228,7 +228,12 @@ ScriptMyIdeas/
 ├── artifacts/              # Stored artifacts (gitignored)
 ├── docs/                   # Documentation
 │   ├── ARCHITECTURE.md     # System architecture
-│   └── BACK4APP_SETUP.md   # Database setup guide
+│   ├── BACK4APP_SETUP.md   # Database setup guide
+│   ├── FREE_HOSTING_OPTIONS.md  # Compare free hosting options
+│   ├── DEPLOY_RENDER.md    # Deploy to Render (recommended)
+│   ├── DEPLOY_VERCEL_ONLY.md    # Deploy to Vercel only
+│   ├── DEPLOY_NOW.md       # Step-by-step guide
+│   └── DEPLOYMENT.md       # Comprehensive deployment guide
 │
 ├── .github/                # GitHub workflows
 ├── .gitignore             # Git ignore rules
@@ -299,18 +304,34 @@ npm run build
 
 ## Deployment
 
-### Backend Deployment (Railway/Render/Fly.io)
+### 🚀 Quick Deploy (10 Minutes - 100% FREE)
 
-1. Set environment variables in hosting platform
-2. Use Python 3.10+ runtime
-3. Install command: `pip install -r requirements.txt`
-4. Start command: `uvicorn app.main:app --host 0.0.0.0 --port $PORT`
+**Need Railway alternative? We have excellent free options!**
 
-### Frontend Deployment (Vercel/Netlify)
+#### Option A: Render.com (RECOMMENDED - Deploy RIGHT NOW)
+- ✅ **No credit card required**
+- ✅ **750 hours/month FREE**
+- ✅ **No code changes needed**
+- ⏱️ **10 minutes to deploy**
 
-1. Build command: `npm run build`
-2. Output directory: `dist`
-3. Environment variables: `VITE_API_URL=your_backend_url`
+**👉 [Follow DEPLOY_RENDER.md Guide](docs/DEPLOY_RENDER.md)**
+
+#### Option B: Vercel-Only (Simplest - 2 Services Instead of 3)
+- ✅ **Everything on Vercel**
+- ✅ **No cold starts**
+- ⚠️ Requires backend adaptation (ask me to create this!)
+
+**👉 [Learn About Vercel-Only](docs/DEPLOY_VERCEL_ONLY.md)**
+
+#### Compare All Options
+**👉 [See FREE_HOSTING_OPTIONS.md](docs/FREE_HOSTING_OPTIONS.md)**
+
+### Detailed Deployment Guides
+
+- **[FREE_HOSTING_OPTIONS.md](docs/FREE_HOSTING_OPTIONS.md)** - Compare all free alternatives
+- **[DEPLOY_RENDER.md](docs/DEPLOY_RENDER.md)** - Render.com deployment (recommended)
+- **[DEPLOY_NOW.md](docs/DEPLOY_NOW.md)** - Original Railway guide
+- **[DEPLOYMENT.md](docs/DEPLOYMENT.md)** - Comprehensive guide with troubleshooting
 
 ## Configuration
 
